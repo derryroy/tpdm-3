@@ -30,6 +30,8 @@ def predict():
         data.extend([0, 1])
     else:
         data.extend([1, 0])
+        
+    
     
     prediction = model.predict([data])
     output = round(prediction[0], 2)
